@@ -1,7 +1,7 @@
 const wordSearch = (letters, word) => {
   const horizontalJoin = letters.map(ls => ls.join(''));
   
-  let horizontal = letters[0].length; //get the length of the letters index 0
+  let horizontal = letters[0].length; //get the length of the letters index 0 which row length
   let vertical = letters.length; //get the column length of the array
   for (let i = 0; i < horizontal; i++) {  //iterate through the row
     let temp = [];
