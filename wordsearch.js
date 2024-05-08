@@ -6,7 +6,7 @@ const wordSearch = (letters, word) => {
   for (let i = 0; i < horizontal; i++) {  //iterate through the row
     let temp = [];
     for (let j = 0; j < vertical; j++) { //iterate through the column
-      temp += letters[j][i]; //get the vertical word and put it into the temp array
+      temp.push(letters[j][i]); //get the vertical word and put it into the temp array
       if (temp.includes(word)) return true; //if the word is found in the temp array, return true
     }
     
